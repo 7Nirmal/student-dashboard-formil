@@ -1,38 +1,71 @@
 .App {
   text-align: center;
+  display:grid;
+  place-content: center;
+}
+.card-container{
+  margin:10px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding:25px;
+}
+.image{
+  height: 50vh;
+  width:25vw;
+  border-radius: 50%;
+}
+.button{
+  margin:10px;
+  width:100%;
+  height:30px;
+  border-radius: 5px;
+  font-family :roboto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover{
+  cursor:pointer;
+  background-color: plum;
+  transform: scaleX(1.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.entry-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding : 50px;
+  gap:10px;
+  width: 500px;
+}
+.container{
+  margin:10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  gap: 1rem ;
+  justify-items: center;
+  background-image: linear-gradient(to left top, #0066fe, #7b88ff, #b0aeff, #dad5ff, #ffffff);
+}
+.student-container{
+  border: 2px solid black;
+  margin:10px;
+  border-radius: 5px;
+  padding:20px;
+  width: 400px;
+  background-image: linear-gradient(to right top, #051937, #004978, #0080a0, #00b89b, #12eb6e)
 }
 
-.App-link {
-  color: #61dafb;
+.student-container:hover{
+  transition: transform 0.5s ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.student-content{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .student-image{
+    height:125px;
+    width:125px;
+    object-fit: cover;
+    border-radius: 50%;
+    float:left
   }
-}
