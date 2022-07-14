@@ -50,7 +50,7 @@
   border-radius: 5px;
   padding:20px;
   width: 400px;
-  background-image: linear-gradient(to right top, #051937, #004978, #0080a0, #00b89b, #12eb6e)
+  background-image: linear-gradient(to right top, #b63200, #ce643e, #e09175, #edbeae, #f2ecea);;
 }
 
 .student-container:hover{
@@ -61,6 +61,7 @@
   align-items: flex-end;
   flex-direction: column;
   justify-content: space-between;
+  color: crimson;
   }
   .student-image{
     height:125px;

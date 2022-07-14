@@ -18,7 +18,7 @@ export function ViewEntry({student}){
         <div>
               <button onClick = {()=> navigate("/")}>back</button>
               <div className='container'>
-        {studentdata.map((ele,index)=> <ViewData key={index} student={ele}/>)}
+        {studentdata.map((ele,index)=> <ViewData key={index} student={ele} getdata={getdata}/>)}
     </div>
         </div>
     )
